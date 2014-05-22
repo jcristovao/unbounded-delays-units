@@ -1,5 +1,5 @@
 Name:                   control-concurrent-units
-Version:                0.0.0
+Version:                0.1
 Author:                 João Cristóvão <jmacristovao@gmail.com>
 Maintainer:             João Cristóvão <jmacristovao@gmail.com>
 License:                BSD3
@@ -19,16 +19,16 @@ Library
                       , units       >= 2.0  && < 2.1
                       , units-defs  >= 1.0 && < 1.1
 
-Test-Suite spec
-  Type:                 exitcode-stdio-1.0
-  Default-Language:     Haskell2010
-  Hs-Source-Dirs:       src
-                      , test
-  Ghc-Options:          -Wall
-  Main-Is:              Spec.hs
-  Build-Depends:        base
-                      , hspec
+--Test-Suite spec
+  --Type:                 exitcode-stdio-1.0
+  --Default-Language:     Haskell2010
+  --Hs-Source-Dirs:       src
+                      --, test
+  --Ghc-Options:          -Wall
+  --Main-Is:              Spec.hs
+  --Build-Depends:        base
+                      --, hspec
 
-Source-Repository head
-  Type:                 git
+--Source-Repository head
+  --Type:                 git
 --  Location:             
