@@ -14,10 +14,9 @@ Library
   HS-Source-Dirs:       src
   GHC-Options:          -Wall
   Exposed-Modules:      Control.Concurrent.Units
-  Other-Modules:        Control.Concurrent.Units.Internal
   Build-Depends:        base        >= 4    && < 5
                       , units       >= 2.0  && < 2.1
-                      , units-defs  >= 1.0 && < 1.1
+                      , units-defs  >= 1.0  && < 1.1
 
 --Test-Suite spec
   --Type:                 exitcode-stdio-1.0
