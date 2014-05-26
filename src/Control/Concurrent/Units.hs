@@ -9,8 +9,8 @@ module Control.Concurrent.Units
   , Hour(..)
   ) where
 
-import qualified Control.Concurrent as Conc
-import qualified System.Timeout     as Timeout
+import qualified Control.Concurrent.Thread.Delay as Conc
+import qualified Control.Concurrent.Timeout     as Timeout
 import Data.Metrology
 import Data.Metrology.SI
 
@@ -30,7 +30,7 @@ instance Show Hour where
 
 
 threadDelay :: Time -> IO ()
-threadDelay t = Conc.threadDelay ( t #! micro Second)
+threadDelay t = Conc.delay ( round $ t ## micro Second)
 
 timeout :: Time -> IO a -> IO (Maybe a)
-timeout t = Timeout.timeout (t #! micro Second)
+timeout t = Timeout.timeout (round $ t ## micro Second)
