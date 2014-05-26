@@ -1,21 +1,11 @@
 # control-concurrent-units
 
-TODO: Write description here
+Higher level interface to unbounded-delays lib, allowing you to specify
+the time delays in whatever unit you prefer, us, ms, seconds, minutes, hours.
 
-## Installation
+See [this blog post for further information](http://fundeps.com/posts/haskell/2014-05-24-An-Experiment-with-Typed-Time/)
 
-TODO: Write installation instructions here
-
-## Usage
-
-TODO: Write usage instructions here
-
-## How to run tests
-
-```
-cabal configure --enable-tests && cabal build && cabal test
-```
 
 ## Contributing
 
-TODO: Write contribution instructions here
+All contribuitions are welcomed!
