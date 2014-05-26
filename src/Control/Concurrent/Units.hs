@@ -1,7 +1,6 @@
 {-# LANGUAGE TypeFamilies  #-}
 module Control.Concurrent.Units
-  ( module ControlConcurrent
-  , threadDelay
+  ( threadDelay
   , timeout
   , Second
   , milli
@@ -10,7 +9,6 @@ module Control.Concurrent.Units
   , Hour(..)
   ) where
 
-import Control.Concurrent as ControlConcurrent hiding (threadDelay)
 import qualified Control.Concurrent as Conc
 import qualified System.Timeout     as Timeout
 import Data.Metrology
