@@ -1,4 +1,11 @@
 {-# LANGUAGE TypeFamilies  #-}
+-- | Higher level interface to
+-- <https://hackage.haskell.org/package/unbounded-delays unbounded-delays> lib, allowing you to specify
+-- the time delays in whatever unit you prefer, us, ms, seconds, minutes, hours.
+-- See <http://fundeps.com/posts/haskell/2015-05-24-An-Experiment-with-Typed-Time/ this blog post for further information>
+-- All contributions are welcomed!
+
+
 module Control.Concurrent.Units
   ( threadDelay
   , timeout
@@ -29,8 +36,10 @@ instance Show Hour where
   show _ = "hour"
 
 
+-- | Thread delay with proper time units
 threadDelay :: Time -> IO ()
 threadDelay t = Conc.delay ( round $ t ## micro Second)
 
+-- | Timeout with proper time units
 timeout :: Time -> IO a -> IO (Maybe a)
 timeout t = Timeout.timeout (round $ t ## micro Second)
