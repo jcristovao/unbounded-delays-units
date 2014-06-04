@@ -17,9 +17,9 @@ Library
   GHC-Options:          -Wall
   Exposed-Modules:      Control.Concurrent.Units
   Build-Depends:        base              >= 4        && < 5
-                      , unbounded-delays  >= 0.1.0.7  && < 0.2
-                      , units             >= 2.0  && < 2.1
-                      , units-defs        >= 1.0  && < 1.1
+                      , unbounded-delays  >= 0.1.0    && < 0.2
+                      , units             >= 2.0      && < 2.1
+                      , units-defs        >= 1.0.1    && < 1.1
 
 --Test-Suite spec
   --Type:                 exitcode-stdio-1.0
