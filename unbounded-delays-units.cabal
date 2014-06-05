@@ -8,7 +8,7 @@ Synopsis:               Thread delays and timeouts using proper time units
 Description:           
   Higher level interface to unbounded-delays lib, allowing you to specify
   the time delays in whatever unit you prefer, us, ms, seconds, minutes, hours.
-Homepage:            https://github.com/jcristovao/unbouded-delays-units
+Homepage:               https://github.com/jcristovao/unbounded-delays-units
 Cabal-Version:          >= 1.10
 Build-Type:             Simple
 
@@ -36,4 +36,4 @@ Library
 
 Source-Repository head
   Type:                 git
-  Location:             https://github.com/jcristovao/unbounded-delays-units 
+  Location:             git@github.com:jcristovao/unbounded-delays-units.git
