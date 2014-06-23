@@ -1,5 +1,5 @@
 Name:                   unbounded-delays-units
-Version:                0.4
+Version:                0.4.0.1
 Author:                 João Cristóvão <jmacristovao@gmail.com>
 Maintainer:             João Cristóvão <jmacristovao@gmail.com>
 License:                BSD3
@@ -22,7 +22,7 @@ Library
   Build-Depends:        base              >= 4        && < 5
                       , unbounded-delays  >= 0.1.0    && < 0.2
                       , units             >= 2.0      && < 2.1
-                      , units-defs        >= 1.0.1    && < 1.1
+                      , units-defs        >= 1.0.2    && < 1.1
 
 --Test-Suite spec
   --Type:                 exitcode-stdio-1.0
